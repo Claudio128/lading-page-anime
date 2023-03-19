@@ -35,6 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--dk-fundo-dois);
+    box-shadow: rgba(223, 223, 223, 0.25) 0px 13px 27px -5px, rgba(83, 83, 83, 0.3) 0px 8px 16px -8px;
     padding: 1rem 2rem;
 }
 
@@ -187,6 +188,7 @@ form input:focus {
 
 .light header {
     border-bottom: 1px solid var(--lg-fundo-dois);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .light .menu:hover {

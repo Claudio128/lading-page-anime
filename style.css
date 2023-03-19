@@ -1,0 +1,245 @@
+:root {
+    --dk-letras: #ffffff;
+    --dk-fundo: #000000;
+    --dk-fundo-dois: #494949;
+    --dk-detalhes: #ffc400;
+    --dk-fundo-tres: #202020;
+    --dk-efeito-input: #002fff;
+}
+
+:root {
+    --lg-letras: #000000;
+    --lg-fundo: #ffffff;
+    --lg-fundo-dois: #e7e7e7;
+    --lg-efeito-input: #002fff;
+    --lg-fundo-tres: #f3f3f3;
+    --lg-detalhes: #55a4ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--dk-letras);
+}
+
+body {
+    background-color: var(--dk-fundo);
+    transition: .5s ease-in-out;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--dk-fundo-dois);
+    padding: 1rem 2rem;
+}
+
+ul {
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.menu {
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid transparent;
+}
+
+.menu:hover {
+    border-bottom: 1px solid var(--dk-detalhes);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.bi-sun {
+    display: none;
+}
+
+.tema {
+    width: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cdt {
+    background-color: var(--dk-fundo);
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 7px;
+    color: var(--dk-letras);
+    transition: .3s;
+    border: 1px solid var(--dk-letras);
+    cursor: pointer;
+}
+
+#cdt svg {
+    transition: .3s;
+    margin-right: 8px;
+    fill: var(--dk-letras);
+}
+
+#cdt:hover {
+    background-color: var(--dk-letras);
+    color: var(--dk-fundo);
+    border: 1px solid transparent;
+}
+
+#cdt:hover svg {
+    fill: var(--dk-fundo);
+}
+
+main {
+    display: flex;
+    width: 900px;
+    margin: 3rem auto 0 auto;
+    background-color: var(--dk-fundo-tres);
+    padding: 25px;
+    gap: 3rem;
+    border-radius: 8px;
+}
+
+#capa {
+    width: 300px;
+    border-radius: 8px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+#subtitle {
+    font-size: 18px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    margin: 5px 0;
+}
+
+form input {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: var(--dk-fundo);
+}
+
+form button {
+    width: 80px;
+    height: 25px;
+    background-color: var(--dk-fundo);
+    border: 1px solid var(--dk-letras);
+    border-radius: 1rem;
+    margin: 1rem auto;
+    transition: .3s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--dk-letras);
+    color: var(--dk-fundo);
+}
+
+form input:focus {
+    border: 1px solid var(--dk-efeito-input);
+}
+
+/* light theme */
+.light * {
+    color: var(--lg-letras);
+}
+
+.light {
+    background-color: var(--lg-fundo);
+}
+
+.light header {
+    border-bottom: 1px solid var(--lg-fundo-dois);
+}
+
+.light .menu:hover {
+    border-bottom: 1px solid var(--lg-detalhes);
+}
+
+.light .bi-moon {
+    display: none;
+}
+
+.light .bi-sun {
+    display: block;
+}
+
+.light #cdt {
+    background-color: var(--lg-fundo);
+    color: var(--lg-letras);
+    border: 1px solid var(--lg-letras);
+}
+
+.light #cdt svg {
+    fill: var(--lg-letras);
+}
+
+.light #cdt:hover {
+    background-color: var(--lg-letras);
+    color: var(--lg-fundo);
+}
+
+.light #cdt:hover svg {
+    fill: var(--lg-fundo);
+}
+
+.light main {
+    background-color: var(--lg-fundo-tres);
+}
+
+.light form input {
+    transition: .3s;
+    border: 1px solid var(--lg-letras);
+    color: var(--lg-fundo);
+}
+
+.light form button {
+    background-color: var(--lg-fundo);
+    border: 1px solid var(--lg-letras);
+}
+
+.light form button:hover {
+    background-color: var(--lg-letras);
+    color: var(--lg-fundo);
+}
+
+.light form input:focus {
+    border: 1px solid var(--lg-efeito-input);
+}

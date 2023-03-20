@@ -177,6 +177,39 @@ form input:focus {
     border: 1px solid var(--dk-efeito-input);
 }
 
+footer{
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--dk-fundo-tres);
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .linhas {
+    border-bottom: 2px solid var(--dk-fundo-dois);
+    width: 40%;
+    height: 20%;
+}
+
+#redes {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+footer img {
+    margin-top: 1rem;
+    max-width: 2rem;
+    filter: brightness(0) invert(1);
+    transition: .3s ease-in-out;
+}
+
+footer img:hover {
+    filter: brightness(1);
+    transform: scale(1.2);
+}
+
 /* light theme */
 .light * {
     color: var(--lg-letras);
@@ -229,7 +262,7 @@ form input:focus {
 .light form input {
     transition: .3s;
     border: 1px solid var(--lg-letras);
-    color: var(--lg-fundo);
+    color: var(--lg-letras);
 }
 
 .light form button {
@@ -244,4 +277,21 @@ form input:focus {
 
 .light form input:focus {
     border: 1px solid var(--lg-efeito-input);
+}
+
+.light footer{
+    border-top: 1px solid var(--lg-fundo-tres);
+}
+
+.light footer .linhas {
+    border-bottom: 2px solid var(--lg-fundo-dois);
+}
+
+.light footer img {
+    filter: brightness(0);
+    transition: .3s ease-in-out;
+}
+
+.light footer img:hover {
+    filter: brightness(1);
 }
